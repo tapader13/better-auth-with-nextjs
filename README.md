@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Web App
+
+This project is a simple web application that includes user authentication features with sign-in and sign-up functionalities, as well as a dashboard for logged-in users.
+
+## Project Structure
+
+```
+my-web-app
+├── src
+│   ├── components
+│   │   └── Header.tsx        # Navigation header component
+│   ├── pages
+│   │   ├── Dashboard.tsx     # Dashboard page component
+│   │   ├── SignIn.tsx        # Sign-in page component
+│   │   └── SignUp.tsx        # Sign-up page component
+│   ├── layouts
+│   │   └── MainLayout.tsx     # Main layout component
+│   ├── App.tsx               # Main application component
+│   └── index.tsx             # Entry point of the application
+├── package.json               # npm configuration file
+├── tsconfig.json              # TypeScript configuration file
+└── README.md                  # Project documentation
+```
+
+## Features
+
+- **Sign In**: Users can enter their credentials to log into the application.
+- **Sign Up**: New users can create an account by providing necessary information.
+- **Dashboard**: A welcome page for users after they log in.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```
+   git clone <repository-url>
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```
+   cd my-web-app
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Install dependencies:
 
-## Learn More
+   ```
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Start the application:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```
+   npm start
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+- React
+- TypeScript
+- React Router (for navigation)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
